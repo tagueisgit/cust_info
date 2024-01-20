@@ -1,0 +1,36 @@
+import sqlite3
+
+DB_FILE = "C:\\RST\\databases\\dev\\customers_20240114\\db\\cust_info_dev.db"
+
+# Function to read schema file paths from a text file
+def read_schema_list(file_path):
+    schema_files = []
+    with open(file_path, 'r') as file:
+        for line in file:
+            schema_files.append(line.strip())
+    return schema_files
+
+# Read the list of schema files
+schema_file_list = read_schema_list('C:\\RST\\databases\\dev\\customers_20240114\\sql\\build_schemas\\cust_info_schema_list.txt')
+
+# Create a connection to the database
+conn = sqlite3.connect(DB_FILE)
+cursor = conn.cursor()
+
+# Process each schema file
+for schema_file_path in schema_file_list:
+    print(f"Processing schema file: {schema_file_path}")
+    try:
+        with open(schema_file_path, 'r') as schema_file:
+            sql_schema = schema_file.read()
+            cursor.executescript(sql_schema)
+    except Exception as e:
+        print(f"Error processing schema file '{schema_file_path}': {str(e)}")
+
+
+# Commit changes and close the database connection
+conn.commit()
+conn.close()
+
+print("Tables created or modified successfully.")
+

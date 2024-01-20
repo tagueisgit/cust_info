@@ -1,0 +1,12 @@
+Customer information database containing tables for aspects of each customer.
+
+Tables
+- customer name table; will be used for populating other tables as a foreign key in those tables
+- license info
+- hot fixes: historical info?
+- check in
+- infrastructure
+
+Setup
+- python script to create database and associated tables from table definitions then populate customer table and build other tables off of the list of customer tables
+- 

@@ -1,0 +1,6 @@
+[Database]
+DB_FILE = G:\Shared drives\Misc.Data\rst.team\btague\databases\dev\customers_current\db\cust_info_dev.db
+PRAGMA1 = 'FULL'
+PRAGMA2 = 'WAL2'
+PRAGMA3 = 'ON'
+SCHEMA_FILE_LIST = G:\Shared drives\Misc.Data\rst.team\btague\databases\dev\customers_current\config\cust_info_schema_list.txt

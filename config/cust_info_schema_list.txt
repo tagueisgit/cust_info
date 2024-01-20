@@ -1,0 +1,4 @@
+G:\Shared drives\Misc.Data\rst.team\btague\databases\dev\customers_current\sql\build_schemas\customers_schema.sql
+G:\Shared drives\Misc.Data\rst.team\btague\databases\dev\customers_current\sql\build_schemas\contacts_schema.sql
+G:\Shared drives\Misc.Data\rst.team\btague\databases\dev\customers_current\sql\populate_schemas\populate_licenses_info.sql
+G:\Shared drives\Misc.Data\rst.team\btague\databases\dev\customers_current\sql\build_schemas\servers_schema.sql
